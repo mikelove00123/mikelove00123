@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haluekan.ta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-07 07:28:25 PM"/>
+        <attribute name="created" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDMtMDM7MTE6Mzk6MDAgQU07Mjc2Mw=="/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDMtMDM7MDI6Mzg6MjIgUE07MjsyODkw"/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMTUxOzIwMjMtMDMtMDc7MDc6Mjg6MjUgUE07NzsyOTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="a" expression="1"/>
+            <while expression="a&lt;=n">
+                <assign variable="sum" expression="sum + 1/a"/>
+                <assign variable="a" expression="a+1"/>
+            </while>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

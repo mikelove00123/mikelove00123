@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haluekan.ta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-04-04 02:48:56 PM"/>
+        <attribute name="created" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDQtMDQ7MDI6MzI6MDMgUE07Mjc3Ng=="/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDQtMDQ7MDI6NDg6NTYgUE07MTsyODk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="wa" type="Integer" array="False" size=""/>
+            <declare name="pa" type="Integer" array="False" size=""/>
+            <declare name="wb" type="Integer" array="False" size=""/>
+            <declare name="pb" type="Integer" array="False" size=""/>
+            <input variable="wa"/>
+            <input variable="pa"/>
+            <input variable="wb"/>
+            <input variable="pb"/>
+            <if expression="wa==wb and pa==pb">
+                <then>
+                    <output expression="&quot;Equal price&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="wa&gt;=wb and pa&gt;=pb">
+                        <then>
+                            <output expression="&quot;A is cheaper than B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;B is cheaper than A&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

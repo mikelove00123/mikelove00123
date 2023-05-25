@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haluekan.ta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-17 03:01:25 PM"/>
+        <attribute name="created" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDItMTc7MDk6MzU6MzQgQU07Mjc3Nw=="/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDItMTc7MDM6MDE6MjUgUE07MTA7MjkzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="100"/>
+            <while expression="a&gt;=1">
+                <output expression="a" newline="True"/>
+                <assign variable="a" expression="a-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

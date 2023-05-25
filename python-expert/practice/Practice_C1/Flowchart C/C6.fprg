@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haluekan.ta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-20 04:41:21 PM"/>
+        <attribute name="created" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDItMjA7MDE6NTc6MjMgUE07Mjc4MA=="/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDItMjA7MDQ6NDE6MjEgUE07NTsyODg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="0"/>
+            <while expression="b&lt;10">
+                <assign variable="a" expression="0"/>
+                <while expression="a&lt;= 8 -b">
+                    <output expression="&quot;-&quot;" newline="False"/>
+                    <assign variable="a" expression="a+1"/>
+                </while>
+                <assign variable="a" expression="0"/>
+                <while expression="a&lt;=b">
+                    <output expression="&quot;x&quot;" newline="False"/>
+                    <assign variable="a" expression="a+1"/>
+                </while>
+                <assign variable="a" expression="0"/>
+                <while expression="a&lt;=b-1">
+                    <output expression="&quot;x&quot;" newline="False"/>
+                    <assign variable="a" expression="a+1"/>
+                </while>
+                <output expression="&quot;&quot;" newline="True"/>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

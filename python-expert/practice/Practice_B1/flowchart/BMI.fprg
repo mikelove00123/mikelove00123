@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haluekan.ta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-16 06:58:08 PM"/>
+        <attribute name="created" value="aGFsdWVrYW4udGE7V1NUMTUxOzIwMjMtMDItMTY7MDY6MjU6MDEgUE07Mjc3OQ=="/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMTUxOzIwMjMtMDItMTY7MDY6NTg6MDggUE07MjsyOTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="W, H, BMI" type="Real" array="False" size=""/>
+            <input variable="W"/>
+            <input variable="H"/>
+            <assign variable="H" expression="H/100"/>
+            <assign variable="BMI" expression="W / H^2"/>
+            <if expression="BMI&lt;20">
+                <then>
+                    <output expression="&quot;THIN&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="BMI&gt;25">
+                        <then>
+                            <output expression="&quot;FAT&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;NORMAL&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

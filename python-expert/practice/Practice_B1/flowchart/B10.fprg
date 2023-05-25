@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="haluekan.ta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-20 11:10:15 AM"/>
+        <attribute name="created" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDItMjA7MDk6NDc6MjkgQU07Mjc3OA=="/>
+        <attribute name="edited" value="aGFsdWVrYW4udGE7V1NUMzMzOzIwMjMtMDItMjA7MTE6MTA6MTUgQU07MTsyODY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <while expression="a&lt;1000">
+                <if expression="a%3==0 and a%5==0 and a%7==0">
+                    <then/>
+                    <else>
+                        <if expression="a%3==0 and a%5==0">
+                            <then>
+                                <output expression="a" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="a%3==0 and a%7==0">
+                                    <then>
+                                        <output expression="a" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="a%5==0 and a%7==0">
+                                            <then>
+                                                <output expression="a" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="a" expression="a+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
