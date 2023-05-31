@@ -14,22 +14,25 @@ Point(x=131, y=219)
 import pyautogui as pg
 import time
 
-##################line1############
-time.sleep(0.1) #รอ1วิ
-start_point = (619,231) 
-pg.click(start_point)
+def copytext(nextline=0):
+    ##################line1############
+    time.sleep(0.1) #รอ1วิ
+    start_point = (619,231 + nextline) 
+    pg.click(start_point)
 
-time.sleep(0.1)
-end_point = (707,234)
-pg.dragTo(end_point,duration=0.1)
+    time.sleep(0.1)
+    end_point = (707,234)
+    pg.dragTo(end_point,duration=0.1)
 
-pg.hotkey('ctrl','c')
+    pg.hotkey('ctrl','c')
 
-left_notepad = (131,219)
-pg.click(left_notepad)
-pg.hotkey('ctrl','v')
-pg.press('enter')
-
+    left_notepad = (131,219)
+    pg.click(left_notepad)
+    pg.hotkey('ctrl','v')
+    #pg.press('enter')
+copytext()
+copytext(17)
+'''
 ##################line2############
 time.sleep(0.1) #รอ1วิ
 start_point = (619,253) 
@@ -82,3 +85,4 @@ pg.press('down')
 pg.press('down')
 pg.hotkey('ctrl','v')
 pg.press('enter')
+'''
