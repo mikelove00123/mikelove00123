@@ -1,10 +1,16 @@
 from tkinter import *
 from tkinter import ttk
+from tkinter import messagebox
 
 def calprofit():
-    at = alltank.get()
-    print("This is a function")
-
+    at = int(alltank.get())
+    cal_sell = at*30
+    cal_cost = at*20
+    profit = cal_sell-cal_cost
+    relex = profit/350000
+    textshow = 'i have profit: {:,d} million\n'.format(profit)
+    textshow2 = "you can buy relex: {} peices".format(relex)
+    messagebox.showinfo('My Profit: ',textshow+textshow2)
 
 GUI = Tk()
 GUI.geometry("500x600")
